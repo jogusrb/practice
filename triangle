@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+	double a, b;
+	double tri;
+	cin >> a >> b;
+	
+	tri = a*b / 2;
+	
+	cout << fixed; //소수점 이하만 다룬다
+	cout.precision(2); //소수점 2개까지 표시
+	
+
+	cout << showpoint << tri;
+	
+	return 0;
+}
