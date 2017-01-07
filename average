@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+	double a, b, c, d;
+	double avr;
+	cin >> a >> b >> c >> d;
+	
+	avr = (a+b+c+d) / 4;
+	
+	cout << fixed; //소수점 이하만 다룬다
+	cout.precision(2); //소수점 2개까지 표시
+	
+
+	cout << showpoint << avr;
+	
+	return 0;
+}
