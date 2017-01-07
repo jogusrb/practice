@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	long double n,q, temp;
+	cin >> n;
+	
+	q = sqrt(n);
+	temp = (int) q;
+	if (q - temp < 0.5&& q-temp >0)
+		q +=1;
+	
+	if (n == 0)
+		q = 0;
+	
+
+	cout << fixed;
+	cout.precision(0);
+	cout << q;
+
+	return 0;
+}
