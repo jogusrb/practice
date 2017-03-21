@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+	int input;
+	int b = 0;
+	int o = 0;
+	int s = 0;
+
+	scanf_s("%d", &input);
+
+	b = ((1000-input) / 100);
+	o = (((1000-input) % 100) / 50);
+	s = ((((1000-input) % 100) % 50) / 10);
+
+
+	printf("%d %d %d", b, o, s);
+
+	return 0;
+}
