@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+	int input1, input2;
+
+
+	int x;
+
+	scanf_s("%d %d", &input1, &input2);
+	
+	x = (input2 - 1)*input1+1;
+
+	printf("%d", x);
+
+	return 0;
+}
