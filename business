@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+	int N, M, P, C;
+
+
+	int sum = 0;
+
+	scanf_s("%d %d %d %d", &N, &M, &P, &C);
+	
+	sum = N - M + P;
+
+	printf("%d", sum);
+
+	return 0;
+}
