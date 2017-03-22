@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+	int input1, input2, input3;
+
+
+	int fuse;
+
+	scanf_s("%d %d %d", &input1, &input2, &input3);
+	
+	fuse = (input1*2.5 + input2 * 2 + input3*0.5) * 2;
+
+	if(fuse%10 !=0)
+		fuse = (fuse / 10 + 1) * 10;
+
+
+	printf("%d amperes", fuse);
+
+	return 0;
+}
