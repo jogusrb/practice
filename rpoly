@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+#include <stdio.h>
+using namespace std;
+
+int main()
+{
+	double r, n;
+	double val;
+
+	cin >> r >> n;
+
+
+	val = n * r * r / 2 * sin(360/n*M_PI/180);
+	
+	printf("%.3f", val);
+
+	return 0;
+}
