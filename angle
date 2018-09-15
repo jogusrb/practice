@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b, c;
+
+	cin >> a;
+
+	b = 180 * (a - 2);
+	c = 360;
+
+	cout << b << " " << c;
+
+	return 0;
+}
