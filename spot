@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double d, p;
+	double val;
+
+	cin >> d;
+	cin >> p;
+
+	val = d - d * (100 + p) / 100;
+	
+	cout << val;
+	cout.precision(3);
+
+	return 0;
+}
