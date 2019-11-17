@@ -1,0 +1,21 @@
+#include <iostream>
+#include <math.h>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+	int bev;
+	cin >> bev;
+	
+	int ma = 0, na = 0;
+
+	ma = bev + bev / 4 + bev / 16;
+	na = na + bev % 4 + (bev / 4) % 4;
+
+	cout << ma << " " << na;
+
+	return 0;
+}
