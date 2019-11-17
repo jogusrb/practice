@@ -1,0 +1,33 @@
+#include <iostream>
+#include <math.h>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+long long mul(int A, int B, int C)
+{
+	if (B == 1)
+		return A;
+	
+	else
+	{
+		long long tmp = mul(A, B / 2, C);
+		if (B % 2)
+			return ((tmp * tmp) % C * A) % C;
+
+		else
+			return tmp * tmp % C;
+		
+	}
+}
+
+int main()
+{
+
+	int A, B, C;
+	cin >> A >> B >> C;
+	cout << mul(A%C, B, C);
+
+
+	return 0;
+}
